@@ -8,6 +8,9 @@ ldap:
       - ldap_db:/var/lib/ldap
       - ldap_static:/etc/ldap
 
+lotus-notes-db2:
+  volumes:
+      - /var/lib/db2:/database
 sensu-api:
   volumes:
     - sensu_api_conf:/etc/sensu/conf.d

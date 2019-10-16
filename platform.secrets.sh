@@ -7,16 +7,16 @@ export INITIAL_ADMIN_USER="admin"
 export INITIAL_ADMIN_PASSWORD_PLAIN="admin"
 
 # Password for the Jenkins user
-export PASSWORD_JENKINS="f7418abef1e53573"
+export PASSWORD_JENKINS="e1ab09a3cdd49595"
 
 # Password for the Gerrit user
-export PASSWORD_GERRIT="78e0398e7a257827"
+export PASSWORD_GERRIT="9ce88fffd5f77441"
 
 # Root password for the Sonar and Gerrit MySQL instances
-export PASSWORD_SQL="4d3f509ec1375501"
+export PASSWORD_SQL="78e91ab805879564"
 
 # Root password for Gitlab admin user
-export PASSWORD_GITLAB="40043bbe7c0c3457"
+export PASSWORD_GITLAB="0e8caa9e02764603"
 
 # Root password for the LDAP server
-export LDAP_PWD="5797c684e4961334" 
+export LDAP_PWD="795835acbb402405" 

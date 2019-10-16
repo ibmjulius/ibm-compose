@@ -10,7 +10,7 @@ jenkins:
     GITLAB_ROOT_PASSWORD: ${PASSWORD_GITLAB}
 
 proxy:
-  image: bagacute/nginx:0.1.1
+  image: jembim/lotus-nginx:0.1
   environment:
     GIT_REPO: "gitlab"
 

@@ -4,7 +4,8 @@
 proxy:
   container_name: proxy
   restart: always
-  image: bagacute/nginx:0.1.0
+  image: jembim/lotus-nginx:0.1
+#  image: bagacute/nginx:0.1.0
   #build: ../images/docker-nginx/
   net: ${CUSTOM_NETWORK_NAME}
   ports:
@@ -39,6 +40,19 @@ ldap:
     SLAPD_PASSWORD: ${LDAP_PWD}
     SLAPD_DOMAIN: ${LDAP_DOMAIN}
     SLAPD_FULL_DOMAIN: ${LDAP_FULL_DOMAIN}
+
+lotus-notes-db2:
+  container_name: lotus-notes-db2
+  image: ibmcom/db2:latest
+  restart: always
+  privileged: true
+  net: ${CUSTOM_NETWORK_NAME}
+  ports:
+    - "50000:50000"
+  environment:
+    LICENSE: "accept"
+    DB2INST1_PASSWORD: "db2admin"
+    DBNAME: "db2notes"
 
 sensu-uchiwa:
   container_name: sensu-uchiwa
