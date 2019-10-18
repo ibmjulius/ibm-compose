@@ -1,5 +1,6 @@
 jenkins:
-  image: bagacute/jenkins:2-0.1.1
+  image: jembim/jenkins:2.60.3-1
+#  image: bagacute/jenkins:2-0.1.1
   environment:
     ADOP_GERRIT_ENABLED: "false"
     ADOP_GITLAB_ENABLED: "true"
@@ -10,7 +11,8 @@ jenkins:
     GITLAB_ROOT_PASSWORD: ${PASSWORD_GITLAB}
 
 proxy:
-  image: jembim/lotus-nginx:0.1
+  image: bagacute/ln-nginx:0.1
+#  image: jembim/lotus-nginx:0.1
   environment:
     GIT_REPO: "gitlab"
 

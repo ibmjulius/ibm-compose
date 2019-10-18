@@ -4,7 +4,8 @@
 proxy:
   container_name: proxy
   restart: always
-  image: jembim/lotus-nginx:0.1
+  image: bagacute/ln-nginx:0.1
+#  image: jembim/lotus-nginx:0.1
 #  image: bagacute/nginx:0.1.0
   #build: ../images/docker-nginx/
   net: ${CUSTOM_NETWORK_NAME}
@@ -159,7 +160,8 @@ sonar:
 jenkins:
   container_name: jenkins
   restart: always
-  image: bagacute/jenkins:2-0.1.1
+  image: jembim/jenkins:2.60.3-1
+#  image: bagacute/jenkins:2-0.1.1
   #build: ../images/docker-jenkins/
   net: ${CUSTOM_NETWORK_NAME}
   expose:
