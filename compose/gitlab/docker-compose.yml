@@ -1,5 +1,6 @@
 jenkins:
-  image: jembim/jenkins:2.60.3-1
+  image: jembim/jenkins:2.107.3
+#  image: jembim/jenkins:2.60.3-1
 #  image: bagacute/jenkins:2-0.1.1
   environment:
     ADOP_GERRIT_ENABLED: "false"
