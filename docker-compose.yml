@@ -274,7 +274,7 @@ selenium-node-firefox:
 nexus:
   container_name: nexus
   restart: always
-  image:  bagacute/nexus:0.1.0
+  image:  bagacute/nexus:0.2.2
   net: ${CUSTOM_NETWORK_NAME}
   expose:
     - "8081"
