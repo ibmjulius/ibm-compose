@@ -42,32 +42,6 @@ ldap:
     SLAPD_DOMAIN: ${LDAP_DOMAIN}
     SLAPD_FULL_DOMAIN: ${LDAP_FULL_DOMAIN}
 
-#lotus-notes-db2:
-#  container_name: lotus-notes-db2
-#  image: ibmcom/db2:latest
-#  restart: always
-#  privileged: true
-#  net: ${CUSTOM_NETWORK_NAME}
-#  ports:
-#    - "50000:50000"
-#  environment:
-#    LICENSE: "accept"
-#    DB2INST1_PASSWORD: "db2admin"
-#    DBNAME: "db2notes"
-
-#mongo-db:
-#  container_name: mongo-db
-#  image: mongo
-#  restart: always
-#  privileged: true
-#  net: ${CUSTOM_NETWORK_NAME}
-#  ports:
-#    - "27017:27017"
-#  environment:
-#    MONGO_INITDB_DATABASE: "phcic"
-#    MONGO_INITDB_ROOT_USERNAME: "mongoadmin"
-#    MONGO_INITDB_ROOT_PASSWORD: "mongoadmin"
-
 sensu-uchiwa:
   container_name: sensu-uchiwa
   restart: always
